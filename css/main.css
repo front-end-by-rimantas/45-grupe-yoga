@@ -5,16 +5,15 @@ body {
 }
 
 .container {
+    display: flex;
+    justify-content: space-between;
     float: left;
     width: 800px;
     margin-left: calc((100% - 800px) / 2);
     margin-bottom: 60px;
-    background-color: pink;
 }
 
 .main-header {
-    display: flex;
-    justify-content: space-between;
     align-items: flex-end;
     margin-top: 10px;
 }
@@ -40,15 +39,34 @@ body {
 
 /* MAIN CONTENT */
 .left-column {
+    width: 40%;
 }
 
 .main-title {
+    font-size: 37px;
+    font-weight: normal;
+}
+
+.orange {
+    color: rgb(255, 70, 34);
 }
 
 .description {
+    font-size: 17px;
+    line-height: 22px;
 }
 
 .btn {
+    display: inline-block;
+    padding: 15px 35px;
+    /* background-color: rgb(255, 70, 34); */
+    /* background-color: hsl(10, 100%, 57%); */
+    background-color: #ff4622;
+    color: white;
+    font-size: 18px;
+    line-height: 20px;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 .right-column {
